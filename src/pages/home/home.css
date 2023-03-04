@@ -1,0 +1,14 @@
+.home{
+    /* width: 100vw; */
+    align-items: flex-start;
+    display: flex;
+    /* border: 2px solid black; */
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width : 768px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,52 @@
+.singlePost{
+    flex: 9;
+    padding: 0.5rem 2rem;
+
+}
+.singlePost img{
+    width: 100%;
+    border-radius: 4px;
+    height: 300px;
+    object-fit: inherit;
+}
+.post-edit{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    overflow-y: hidden;
+}
+.post-edit .write{
+    color: royalblue;
+}
+.write:hover , .delete:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.post-edit .delete{
+    color: tomato;
+}
+.post-title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'lora';
+}
+.post-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(168, 207, 67);
+}
+.post-description{
+    margin: 2rem 0;
+    color: grey;
+}
+@media (max-width : 768px) {
+    .singlePost{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
